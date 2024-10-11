@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display-flex: center;
+    justify-content: space-between;
+
+}
+
+img{
+    border: 5px solid #7bdaff; 
+    border-radius: 50%;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-topo-e img{
+    border: 5px solid #7bdaff; 
+    border-radius: 50%;
+    padding: 5px;
+    width: 200%;
+    height: auto;
+}
+
+header a{
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    justify-content: baseline;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #78cce6;
+    border: 0;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #78cce6b6 ;
+    transform: scale(1.05);
+}
+
+/* topo do site*/
+
+section.top-do-site{
+    padding: 40px 4%;
+}
+
+section.top-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 40px;
+}
+
+.topo-do-site .texto-topo h1 span{
+    color: #78cce6;
+    font-size: 42px;
+}
+
+.topo-do-site .texto-topo p{
+    color: white;
+    margin: 40px 0px;
+}
+
+.topo-do-site imagem-topo img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site imagem-topo-e img{
+    
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes float {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+footer{
+    color: white;
+}
